@@ -1,0 +1,39 @@
+.background-radial-gradient {
+    background-color: #000; /* Start with black */
+    background-image: radial-gradient(650px circle at 0% 0%,
+        #ec1c24 15%, /* Red */
+        #820c12 35%, /* Darker shade of red */
+        #420606 75%, /* Dark maroon */
+        #000 100%), /* Black */
+      radial-gradient(1250px circle at 100% 100%,
+        #ec1c24 15%, /* Red */
+        #820c12 35%, /* Darker shade of red */
+        #420606 75%, /* Dark maroon */
+        #000 100%); /* Black */
+}
+
+#radius-shape-1 {
+    height: 220px;
+    width: 220px;
+    top: -60px;
+    left: -130px;
+    background: radial-gradient(#ec1c24, #820c12); /* Gradient for circles */
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#radius-shape-2 {
+    width: 300px;
+    height: 300px;
+    bottom: -60px;
+    right: -110px;
+    background: radial-gradient(#ec1c24, #820c12); /* Gradient for circles */
+    position: absolute;
+    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    overflow: hidden;
+}
+.sgnbtn
+{
+    width: 100%;
+}
