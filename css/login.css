@@ -1,0 +1,48 @@
+/* Custom Gradient Background */
+.gradient-custom {
+    background: #ec1c24; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgb(229, 25, 25), rgb(0, 11, 13)); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(222, 22, 22), rgb(3, 14, 33)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+  }
+  
+  /* Additional Custom Styles */
+  .card {
+    border-radius: 1rem;
+  }
+  
+  .card-body {
+    padding: 2rem;
+  }
+  
+  .fw-bold {
+    font-weight: 700;
+  }
+  
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+  
+  .text-white-50 {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .text-white {
+    color: #fff;
+  }
+  
+  .btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: #fff;
+    color: #dd2727;
+  }
+  
+  .form-label {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
