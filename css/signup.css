@@ -43,3 +43,9 @@
 {
     width: 100%;
 }
+.already
+{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}

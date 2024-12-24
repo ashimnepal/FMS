@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign-Up Form</title>
+  <title>Client Sign-Up Form</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <!-- FontAwesome for icons -->
@@ -14,17 +14,16 @@
   <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-  <!-- Section: Design Block -->
   <section class="background-radial-gradient overflow-hidden">
     <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
       <div class="row gx-lg-5 align-items-center mb-5">
         <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
           <h1 class="my-5 display-5 fw-bold ls-tight text-light">
-            The best offer <br />
-            <span class="text-highlight">for your business</span>
+            Join Our Network <br />
+            <span class="text-highlight">Empower Your Business</span>
           </h1>
           <p class="mb-4 opacity-70 text-light">
-            Thank you for considering joining our logistics network! At [Company Name], we strive to provide seamless and efficient transportation services across various routes. Whether you're a carrier, driver, or logistics manager, our platform connects you with a range of opportunities designed to enhance your business operations. By signing up, you’ll be part of a dynamic network dedicated to excellence in logistics. We're excited to work together and help you expand your reach and improve your service delivery!
+            By signing up, you'll become part of a dynamic logistics platform, enabling seamless transportation and efficient operations. Let's grow together!
           </p>
         </div>
 
@@ -35,150 +34,111 @@
           <div class="card bg-glass">
             <div class="card-body px-4 py-5 px-md-5">
               <form>
-                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <!-- Account Details -->
+                <h4 class="mb-4 text-center">Account Details</h4>
                 <div class="row">
                   <div class="col-md-6 mb-4">
                     <div class="form-outline">
-                      <input type="text" id="form3Example1" class="form-control" />
-                      <label class="form-label" for="form3Example1">First name</label>
+                      <input type="text" id="first-name" class="form-control" required />
+                      <label class="form-label" for="first-name">First Name</label>
                     </div>
                   </div>
                   <div class="col-md-6 mb-4">
                     <div class="form-outline">
-                      <input type="text" id="form3Example2" class="form-control" />
-                      <label class="form-label" for="form3Example2">Last name</label>
+                      <input type="text" id="last-name" class="form-control" required />
+                      <label class="form-label" for="last-name">Last Name</label>
+                    </div>
+                  </div>
+                </div>                
+                <div class="form-outline mb-4">
+                  <input type="email" id="email" class="form-control" required />
+                  <label class="form-label" for="email">Email Address</label>
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="tel" id="phone-number" class="form-control" required />
+                  <label class="form-label" for="phone-number">Phone Number</label>
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="password" id="password" class="form-control" required />
+                  <label class="form-label" for="password">Password</label>
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="password" id="confirm-password" class="form-control" required />
+                  <label class="form-label" for="confirm-password">Confirm Password</label>
+                </div>
+
+               
+                
+
+                <!-- Business Information -->
+                <h4 class="mb-4 text-center">Business Information (Optional)</h4>
+                <div class="form-outline mb-4">
+                  <input type="text" id="company-name" class="form-control" />
+                  <label class="form-label" for="company-name">Company Name</label>
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="text" id="business-reg-number" class="form-control" />
+                  <label class="form-label" for="business-reg-number">Business Registration Number</label>
+                </div>
+
+                <!-- Address Details -->
+                <h4 class="mb-4 text-center">Address Details</h4>
+                <div class="form-outline mb-4">
+                  <input type="text" id="street-address" class="form-control" required />
+                  <label class="form-label" for="street-address">Street Address</label>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="city" class="form-control" required />
+                      <label class="form-label" for="city">City</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="state" class="form-control" required />
+                      <label class="form-label" for="state">State/Province</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="postal-code" class="form-control" required />
+                      <label class="form-label" for="postal-code">Postal Code</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <select id="country" class="form-select" required>
+                        <option value="" disabled selected>Choose Country</option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="UK">Mexico</option>
+                        <!-- Add more countries as needed -->
+                      </select>
+                      <label class="form-label" for="country">Country</label>
                     </div>
                   </div>
                 </div>
 
-                <!-- Email input -->
-                <div class="form-outline mb-4">
-                  <input type="email" id="form3Example3" class="form-control" />
-                  <label class="form-label" for="form3Example3">Email address</label>
-                </div>
-
-                <!-- Password input -->
-                <div class="form-outline mb-4">
-                  <input type="password" id="form3Example4" class="form-control" />
-                  <label class="form-label" for="form3Example4">Password</label>
-                </div>
-
-                <!-- Checkbox -->
+                <!-- Agreement -->
                 <div class="form-check d-flex justify-content-center mb-4">
-                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
-                  <label class="form-check-label" for="form2Example33">
-                    Subscribe to our newsletter
+                  <input class="form-check-input me-2" type="checkbox" value="" id="terms-agreement" required />
+                  <label class="form-check-label" for="terms-agreement">
+                    I agree to the <a href="#">terms and conditions</a>.
                   </label>
                 </div>
 
                 <!-- Submit button -->
-                <button type="submit" class="btn btn-primary btn-block mb-4 sgnbtn ">
-                  Sign up
+                <button type="submit" class="btn btn-primary btn-block mb-4 sgnbtn">
+                  Sign Up
                 </button>
-
-                <!-- Register buttons -->
-                <div class="text-center">
-                  <p>or sign up with:</p>
-                  <button type="button" class="btn btn-link btn-floating mx-1">
-                    <i class="fab fa-facebook-f"></i>
-                  </button>
-
-                  <button type="button" class="btn btn-link btn-floating mx-1">
-                    <i class="fab fa-google"></i>
-                  </button>
-
-                  <button type="button" class="btn btn-link btn-floating mx-1">
-                    <i class="fab fa-twitter"></i>
-                  </button>
-
-                  <button type="button" class="btn btn-link btn-floating mx-1">
-                    <i class="fab fa-github"></i>
-                  </button>
-                </div>
               </form>
+              <h6 class="already">Already have an account? <a href="login.html">Login</a></h6>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- Section: Design Block -->
-  <section id="footermain">
-    <div class="container-fluid g-0">
-      <div class="footerhere">
-        <footer class="footer">
-          <!-- Section: Social media -->
-          <section class="social-media">
-            <!-- Left -->
-            <div class="social-left">
-              <span>Get connected with us on social networks:</span>
-            </div>
-            <!-- Right -->
-            <div class="social-right">
-              <a href="" class="social-link"><i class="fab fa-facebook-f"></i></a>
-              <a href="" class="social-link"><i class="fab fa-twitter"></i></a>
-              <a href="" class="social-link"><i class="fab fa-google"></i></a>
-              <a href="" class="social-link"><i class="fab fa-instagram"></i></a>
-              <a href="" class="social-link"><i class="fab fa-linkedin"></i></a>
-              <a href="" class="social-link"><i class="fab fa-github"></i></a>
-            </div>
-          </section>
-          <!-- Section: Links -->
-          <section class="links">
-            <div class="container">
-              <div class="row">
-                <!-- Column 1 -->
-                <div class="col">
-                  <h6>ALL ROUTES LOGISTICS</h6>
-                  <hr />
-                  <p>
-                    Here you can use rows and columns to organize your footer
-                    content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit.
-                  </p>
-                </div>
-                <!-- Column 2 -->
-                <div class="col">
-                  <h6>Products</h6>
-                  <hr />
-                  <p><a href="#!" class="footer-link">MDBootstrap</a></p>
-                  <p><a href="#!" class="footer-link">MDWordPress</a></p>
-                  <p><a href="#!" class="footer-link">BrandFlow</a></p>
-                  <p>
-                    <a href="#!" class="footer-link">Bootstrap Angular</a>
-                  </p>
-                </div>
-                <!-- Column 3 -->
-                <div class="col">
-                  <h6>Useful links</h6>
-                  <hr />
-                  <p><a href="#!" class="footer-link">Your Account</a></p>
-                  <p>
-                    <a href="#!" class="footer-link">Become an Affiliate</a>
-                  </p>
-                  <p>
-                    <a href="#!" class="footer-link">Shipping Rates</a>
-                  </p>
-                  <p><a href="#!" class="footer-link">Help</a></p>
-                </div>
-                <!-- Column 4 -->
-                <div class="col">
-                  <h6>Contact</h6>
-                  <hr />
-                  <p><i class="fas fa-home"></i> New York, NY 10012, US</p>
-                  <p><i class="fas fa-envelope"></i> info@example.com</p>
-                  <p><i class="fas fa-phone"></i> + 01 234 567 88</p>
-                  <p><i class="fas fa-print"></i> + 01 234 567 89</p>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- Copyright -->
-          <div class="footer-copyright">
-            © 2020 Copyright:
-            <a class="footer-link" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-          </div>
-        </footer>
       </div>
     </div>
   </section>
