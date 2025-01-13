@@ -8,11 +8,13 @@ body{
     padding: 0;
 }
 
-dashlogo
+.dashlogo
 {
     width: 100%;
 }
 
 .truckcard{
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+
 }
