@@ -16,5 +16,56 @@ body{
 .truckcard{
     margin-left: 10px;
     margin-bottom: 20px;
+}
 
+.truck_body_detail
+{
+    height: 265px;
+}
+
+.card-text
+{
+    height: 140px;
+}
+
+.form-control{
+    border: 1px solid black !important;
+    
+}
+
+.form-selected{
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem 0.5rem 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #404040;
+  appearance: none;
+  background-color: transparent;
+  background-image: var(--bs-form-select-bg-img), var(--bs-form-select-bg-icon, none);
+  background-repeat: no-repeat;
+  background-position: right 0 center;
+  background-size: 16px 12px;
+  border: 1px solid #d2d6da;
+  border-radius: 0.375rem;
+  transition: 0.2s ease;
+  padding-left:10px;
+}
+
+.form-controlled {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #404040;
+    appearance: none;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #d2d6da;
+    border-radius: 0.375rem;
+    transition: 0.2s ease;
+    padding-left: 10px;
 }

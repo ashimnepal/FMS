@@ -127,7 +127,7 @@
                     <div class="ms-md-auto pe-md-3 d-flex align-items-center">
                         <div class="input-group input-group-outline">
                             <label class="form-label">Type here...</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-controlled">
                         </div>
                     </div>
                     <ul class="navbar-nav d-flex align-items-center  justify-content-end">
@@ -243,283 +243,155 @@
 
 
 
+
         <div class="row">
             <div class="col-12">
                 <div class="card my-4">
                     <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                         <div class="bg-gradient-dark shadow-dark border-radius-lg pt-4 pb-3">
-                            <h6 class="text-white text-capitalize ps-3">Drivers table</h6>
+                            <h6 class="text-white text-capitalize ps-3">Vehicle Add Form</h6>
                         </div>
                     </div>
-                    <div class="card-body px-0 pb-2">
-                        <div class="table-responsive p-0">
-                            <table class="table align-items-center justify-content-center mb-0">
-                                <thead>
-                                    <tr>
-                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                            Name</th>
-                                        <th
-                                            class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                            KMS Driven</th>
-                                        <th
-                                            class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                            Status</th>
-                                        <th
-                                            class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">
-                                            Trips Covered</th>
-                                            <th
-                                            class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">
-                                            Actions</th>
+                                       
+                    <div class="col-md-12">
+                        <div class="card-body px-0 pb-2">
+                            <div class="table-responsive p-2">
+                                <form>
+                                    <!-- Vehicle Type -->
+                                    <div class="mb-3">
+                                        <label for="vehicleType" class="form-label">Vehicle Type</label>
+                                        <select class="form-selected" id="vehicleType" required>
+                                            <option value="" selected disabled>Select Vehicle Type</option>
+                                            <option value="Truck">Truck</option>
+                                            <option value="Trailer">Trailer</option>
+                                            <option value="Van">Van</option>
+                                            <option value="Car">Car</option>
+                                        </select>
+                                    </div>
 
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex px-2">
-                                                <div>
-                                                    <img src="../../imgs/team-2.jpg"
-                                                        class="avatar avatar-sm rounded-circle me-2" alt="spotify">
-                                                </div>
-                                                <div class="my-auto">
-                                                    <h6 class="mb-0 text-sm">G.Singh</h6>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p class="text-sm font-weight-bold mb-0">12000km</p>
-                                        </td>
-                                        <td>
-                                            <span class="text-xs font-weight-bold">Working</span>
-                                        </td>
-                                        <td class="align-middle text-center">
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="me-2 text-xs font-weight-bold">602</span>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle text-center">
-                                            <div class="d-flex justify-content-center">
-                                                <!-- View Button -->
-                                                <button class="btn btn-primary btn-sm me-2">View</button>
+                                    <!-- Vehicle Make -->
+                                    <div class="mb-3">
+                                        <label for="vehicleMake" class="form-label">Vehicle Make</label>
+                                        <input type="text" class="form-controlled" id="vehicleMake"
+                                            placeholder="Enter Manufacturer (e.g., Volvo)" required />
+                                    </div>
 
-                                                <!-- Edit Button -->
-                                                <button class="btn btn-warning btn-sm me-2">Edit</button>
+                                    <!-- Vehicle Model -->
+                                    <div class="mb-3">
+                                        <label for="vehicleModel" class="form-label">Vehicle Model</label>
+                                        <input type="text" class="form-controlled" id="vehicleModel"
+                                            placeholder="Enter Model (e.g., FMX 460)" required />
+                                    </div>
 
-                                                <!-- Delete Button -->
-                                                <button class="btn btn-danger btn-sm">Delete</button>
-                                            </div>
-                                        </td>
+                                    <!-- Year of Manufacture -->
+                                    <div class="mb-3">
+                                        <label for="manufactureYear" class="form-label">Year of Manufacture</label>
+                                        <input type="number" class="form-controlled" id="manufactureYear"
+                                            placeholder="Enter Year (e.g., 2020)" min="1900" max="2025" required />
+                                    </div>
 
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex px-2">
-                                                <div>
-                                                    <img src="../../imgs/team-2.jpg"
-                                                        class="avatar avatar-sm rounded-circle me-2" alt="invision">
-                                                </div>
-                                                <div class="my-auto">
-                                                    <h6 class="mb-0 text-sm">Gi Dhillon</h6>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p class="text-sm font-weight-bold mb-0">5000km</p>
-                                        </td>
-                                        <td>
-                                            <span class="text-xs font-weight-bold">Resting</span>
-                                        </td>
-                                        <td class="align-middle text-center">
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="me-2 text-xs font-weight-bold">100</span>
-                                            </div>
+                                    <!-- Registration Number -->
+                                    <div class="mb-3">
+                                        <label for="registrationNumber" class="form-label">Registration Number</label>
+                                        <input type="text" class="form-controlled" id="registrationNumber"
+                                            placeholder="Enter Registration Number" required />
+                                    </div>
 
-                                            <td class="align-middle text-center">
-                                                <div class="d-flex justify-content-center">
-                                                    <!-- View Button -->
-                                                    <button class="btn btn-primary btn-sm me-2">View</button>
-    
-                                                    <!-- Edit Button -->
-                                                    <button class="btn btn-warning btn-sm me-2">Edit</button>
-    
-                                                    <!-- Delete Button -->
-                                                    <button class="btn btn-danger btn-sm">Delete</button>
-                                                </div>
-                                            </td>
-                                        </td>
-                                        <td class="align-middle">
-                                            <button class="btn btn-link text-secondary mb-0" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                <i class="fa fa-ellipsis-v text-xs"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex px-2">
-                                                <div>
-                                                    <img src="../../imgs/team-2.jpg"
-                                                        class="avatar avatar-sm rounded-circle me-2" alt="jira">
-                                                </div>
-                                                <div class="my-auto">
-                                                    <h6 class="mb-0 text-sm">At Gill</h6>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p class="text-sm font-weight-bold mb-0">1900km</p>
-                                        </td>
-                                        <td>
-                                            <span class="text-xs font-weight-bold">Working</span>
-                                        </td>
-                                        <td class="align-middle text-center">
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="me-2 text-xs font-weight-bold">30</span>
-                                            </div>
+                                    <!-- VIN -->
+                                    <div class="mb-3">
+                                        <label for="vinNumber" class="form-label">Vehicle Identification Number
+                                            (VIN)</label>
+                                        <input type="text" class="form-controlled" id="vinNumber"
+                                            placeholder="Enter VIN (e.g., 1HGCM82633A123456)" required />
+                                    </div>
 
-                                            <td class="align-middle text-center">
-                                                <div class="d-flex justify-content-center">
-                                                    <!-- View Button -->
-                                                    <button class="btn btn-primary btn-sm me-2">View</button>
-    
-                                                    <!-- Edit Button -->
-                                                    <button class="btn btn-warning btn-sm me-2">Edit</button>
-    
-                                                    <!-- Delete Button -->
-                                                    <button class="btn btn-danger btn-sm">Delete</button>
-                                                </div>
-                                            </td>
-                                        </td>
-                                        <td class="align-middle">
-                                            <button class="btn btn-link text-secondary mb-0" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                <i class="fa fa-ellipsis-v text-xs"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex px-2">
-                                                <div>
-                                                    <img src="../../imgs/team-2.jpg"
-                                                        class="avatar avatar-sm rounded-circle me-2" alt="webdev">
-                                                </div>
-                                                <div class="my-auto">
-                                                    <h6 class="mb-0 text-sm">Bo Chauchan</h6>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p class="text-sm font-weight-bold mb-0">25000km</p>
-                                        </td>
-                                        <td>
-                                            <span class="text-xs font-weight-bold">Working</span>
-                                        </td>
-                                        <td class="align-middle text-center">
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="me-2 text-xs font-weight-bold">808</span>
-                                            </div>
-                                            <td class="align-middle text-center">
-                                                <div class="d-flex justify-content-center">
-                                                    <!-- View Button -->
-                                                    <button class="btn btn-primary btn-sm me-2">View</button>
-    
-                                                    <!-- Edit Button -->
-                                                    <button class="btn btn-warning btn-sm me-2">Edit</button>
-    
-                                                    <!-- Delete Button -->
-                                                    <button class="btn btn-danger btn-sm">Delete</button>
-                                                </div>
-                                            </td>
-                                        </td>
-                                        <td class="align-middle">
-                                            <button class="btn btn-link text-secondary mb-0" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                <i class="fa fa-ellipsis-v text-xs"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex px-2">
-                                                <div>
-                                                    <img src="../../imgs/team-2.jpg"
-                                                        class="avatar avatar-sm rounded-circle me-2" alt="slack">
-                                                </div>
-                                                <div class="my-auto">
-                                                    <h6 class="mb-0 text-sm">Sl Syan</h6>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p class="text-sm font-weight-bold mb-0">1000km</p>
-                                        </td>
-                                        <td>
-                                            <span class="text-xs font-weight-bold">Resting</span>
-                                        </td>
-                                        <td class="align-middle text-center">
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="me-2 text-xs font-weight-bold">0</span>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle text-center">
-                                            <div class="d-flex justify-content-center">
-                                                <!-- View Button -->
-                                                <button class="btn btn-primary btn-sm me-2">View</button>
+                                    <!-- Engine Number -->
+                                    <div class="mb-3">
+                                        <label for="engineNumber" class="form-label">Engine Number</label>
+                                        <input type="text" class="form-controlled" id="engineNumber"
+                                            placeholder="Enter Engine Number" required />
+                                    </div>
 
-                                                <!-- Edit Button -->
-                                                <button class="btn btn-warning btn-sm me-2">Edit</button>
+                                    <!-- Color -->
+                                    <div class="mb-3">
+                                        <label for="vehicleColor" class="form-label">Color</label>
+                                        <input type="text" class="form-controlled" id="vehicleColor"
+                                            placeholder="Enter Vehicle Color (e.g., Red)" />
+                                    </div>
 
-                                                <!-- Delete Button -->
-                                                <button class="btn btn-danger btn-sm">Delete</button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex px-2">
-                                                <div>
-                                                    <img src="../../imgs/team-2.jpg"
-                                                        class="avatar avatar-sm rounded-circle me-2" alt="xd">
-                                                </div>
-                                                <div class="my-auto">
-                                                    <h6 class="mb-0 text-sm">Dev Sir</h6>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <p class="text-sm font-weight-bold mb-0">3500km</p>
-                                        </td>
-                                        <td>
-                                            <span class="text-xs font-weight-bold">Working</span>
-                                        </td>
-                                        <td class="align-middle text-center">
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <span class="me-2 text-xs font-weight-bold">100</span>
+                                    <!-- Fuel Type -->
+                                    <div class="mb-3">
+                                        <label for="fuelType" class="form-label">Fuel Type</label>
+                                        <select class="form-selected" id="fuelType" required>
+                                            <option value="" disabled selected>Select Fuel Type</option>
+                                            <option value="Diesel">Diesel</option>
+                                            <option value="Petrol">Petrol</option>
+                                            <option value="Electric">Electric</option>
+                                            <option value="Hybrid">Hybrid</option>
+                                        </select>
+                                    </div>
 
-                                            </div>
-                                        </td>
-                                        <td class="align-middle text-center">
-                                            <div class="d-flex justify-content-center">
-                                                <!-- View Button -->
-                                                <button class="btn btn-primary btn-sm me-2">View</button>
-
-                                                <!-- Edit Button -->
-                                                <button class="btn btn-warning btn-sm me-2">Edit</button>
-
-                                                <!-- Delete Button -->
-                                                <button class="btn btn-danger btn-sm">Delete</button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                    <!-- Submit Button -->
+                                    <button type="submit" class="btn btn-primary">Add Vehicle</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
-        </div>
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
