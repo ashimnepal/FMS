@@ -58,6 +58,47 @@
           </a>
         </li>
         <li class="nav-item">
+          <a class="nav-link text-dark" href="#addSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+            <i class="material-symbols-rounded opacity-5">add_circle</i>
+            <span class="nav-link-text ms-1">Add Subjects</span>
+            <i class="material-symbols-rounded opacity-5 ms-auto">expand_more</i>
+          </a>
+          <div class="collapse" id="addSubmenu">
+            <ul class="nav nav-sm flex-column ms-4">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="staffadd.html">
+                  <i class="material-symbols-rounded opacity-5">person_add</i>
+                  <span class="nav-link-text ms-1">Add Staff</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="driversadd.html">
+                  <i class="material-symbols-rounded opacity-5">directions_car</i>
+                  <span class="nav-link-text ms-1">Add Driver</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="vehicleadd.html">
+                  <i class="material-symbols-rounded opacity-5">local_shipping</i>
+                  <span class="nav-link-text ms-1">Add Vehicle</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="Tripadd.html">
+                  <i class="material-symbols-rounded opacity-5">route</i>
+                  <span class="nav-link-text ms-1">Add Trip</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="todo.html">
+                  <i class="material-symbols-rounded opacity-5">task_alt</i>
+                  <span class="nav-link-text ms-1">Add Task</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
           <a class="nav-link text-dark" href="driversdir.html">
               <i class="material-symbols-rounded opacity-5">view_in_ar</i>
               <span class="nav-link-text ms-1">Drivers Directory</span>
@@ -536,10 +577,10 @@
 
 
    <!--   Core JS Files   -->
-   <script src="../assets/js/core/popper.min.js"></script>
-   <script src="../assets/js/core/bootstrap.min.js"></script>
-   <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
-   <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+   <script src="../../js/dashboard/popper.min.js"></script>
+   <script src="../../js/dashboard/bootstrap.min.js"></script>
+   <script src="../../js/dashboard/perfect-scrollbar.min.js"></script>
+   <script src="../../js/dashboard/smooth-scrollbar.min.js"></script>
    <script>
      var win = navigator.platform.indexOf('Win') > -1;
      if (win && document.querySelector('#sidenav-scrollbar')) {
@@ -552,7 +593,7 @@
    <!-- Github buttons -->
    <script async defer src="https://buttons.github.io/buttons.js"></script>
    <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-   <script src="../assets/js/material-dashboard.min.js?v=3.2.0"></script>
+   <script src="../../js/dashboard/material-dashboard.min.js"></script>
  </body>
  
  </html>

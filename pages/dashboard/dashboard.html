@@ -59,6 +59,47 @@
           </a>
         </li>
         <li class="nav-item">
+          <a class="nav-link text-dark" href="#addSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+            <i class="material-symbols-rounded opacity-5">add_circle</i>
+            <span class="nav-link-text ms-1">Add Subjects</span>
+            <i class="material-symbols-rounded opacity-5 ms-auto">expand_more</i>
+          </a>
+          <div class="collapse" id="addSubmenu">
+            <ul class="nav nav-sm flex-column ms-4">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="staffadd.html">
+                  <i class="material-symbols-rounded opacity-5">person_add</i>
+                  <span class="nav-link-text ms-1">Add Staff</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="driversadd.html">
+                  <i class="material-symbols-rounded opacity-5">directions_car</i>
+                  <span class="nav-link-text ms-1">Add Driver</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="vehicleadd.html">
+                  <i class="material-symbols-rounded opacity-5">local_shipping</i>
+                  <span class="nav-link-text ms-1">Add Vehicle</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="Tripadd.html">
+                  <i class="material-symbols-rounded opacity-5">route</i>
+                  <span class="nav-link-text ms-1">Add Trip</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="todo.html">
+                  <i class="material-symbols-rounded opacity-5">task_alt</i>
+                  <span class="nav-link-text ms-1">Add Task</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
           <a class="nav-link text-dark" href="driversdir.html">
               <i class="material-symbols-rounded opacity-5">view_in_ar</i>
               <span class="nav-link-text ms-1">Drivers Directory</span>
@@ -616,75 +657,78 @@
             </div>
           </div>
         </div>
+
+
         <div class="col-lg-4 col-md-6">
           <div class="card h-100">
             <div class="card-header pb-0">
-              <h6>Orders overview</h6>
-              <p class="text-sm">
-                <i class="fa fa-arrow-up text-success" aria-hidden="true"></i>
-                <span class="font-weight-bold">24%</span> this month
-              </p>
+              <h6>Tasks overview</h6>              
             </div>
             <div class="card-body p-3">
-              <div class="timeline timeline-one-side">
+              <div class="timeline timeline-one-side" style="max-height: 400px; overflow-y: auto;">
                 <div class="timeline-block mb-3">
                   <span class="timeline-step">
-                    <i class="material-symbols-rounded text-success text-gradient">notifications</i>
+                    <img src="../../imgs/team-1.jpg" class="avatar avatar-sm rounded-circle" alt="staff1">
                   </span>
                   <div class="timeline-content">
-                    <h6 class="text-dark text-sm font-weight-bold mb-0">$2400, Design changes</h6>
-                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">22 DEC 7:20 PM</p>
+                    <h6 class="text-dark text-sm font-weight-bold mb-0">John Doe</h6>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">Route Planning</p>
+                    <span class="badge badge-sm bg-gradient-success">Completed</span>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">Assigned By: John Doe</p>                                   
                   </div>
                 </div>
+
                 <div class="timeline-block mb-3">
                   <span class="timeline-step">
-                    <i class="material-symbols-rounded text-danger text-gradient">code</i>
+                    <img src="../../imgs/team-2.jpg" class="avatar avatar-sm rounded-circle" alt="staff2">
                   </span>
                   <div class="timeline-content">
-                    <h6 class="text-dark text-sm font-weight-bold mb-0">New order #1832412</h6>
-                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">21 DEC 11 PM</p>
+                    <h6 class="text-dark text-sm font-weight-bold mb-0">Sarah Smith</h6>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">Driver Assignment</p>
+                    <span class="badge badge-sm bg-gradient-warning">In Progress</span>
                   </div>
                 </div>
+
                 <div class="timeline-block mb-3">
                   <span class="timeline-step">
-                    <i class="material-symbols-rounded text-info text-gradient">shopping_cart</i>
+                    <img src="../../imgs/team-3.jpg" class="avatar avatar-sm rounded-circle" alt="staff3">
                   </span>
                   <div class="timeline-content">
-                    <h6 class="text-dark text-sm font-weight-bold mb-0">Server payments for April</h6>
-                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">21 DEC 9:34 PM</p>
+                    <h6 class="text-dark text-sm font-weight-bold mb-0">Mike Johnson</h6>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">Vehicle Maintenance</p>
+                    <span class="badge badge-sm bg-gradient-success">Completed</span>
                   </div>
                 </div>
-                <div class="timeline-block mb-3">
-                  <span class="timeline-step">
-                    <i class="material-symbols-rounded text-warning text-gradient">credit_card</i>
-                  </span>
-                  <div class="timeline-content">
-                    <h6 class="text-dark text-sm font-weight-bold mb-0">New card added for order #4395133</h6>
-                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">20 DEC 2:20 AM</p>
-                  </div>
-                </div>
-                <div class="timeline-block mb-3">
-                  <span class="timeline-step">
-                    <i class="material-symbols-rounded text-primary text-gradient">key</i>
-                  </span>
-                  <div class="timeline-content">
-                    <h6 class="text-dark text-sm font-weight-bold mb-0">Unlock packages for development</h6>
-                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">18 DEC 4:54 AM</p>
-                  </div>
-                </div>
+
                 <div class="timeline-block">
                   <span class="timeline-step">
-                    <i class="material-symbols-rounded text-dark text-gradient">payments</i>
+                    <img src="../../imgs/team-4.jpg" class="avatar avatar-sm rounded-circle" alt="staff4">
                   </span>
                   <div class="timeline-content">
-                    <h6 class="text-dark text-sm font-weight-bold mb-0">New order #9583120</h6>
-                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">17 DEC</p>
+                    <h6 class="text-dark text-sm font-weight-bold mb-0">Emma Wilson</h6>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">Documentation</p>
+                    <span class="badge badge-sm bg-gradient-warning">In Progress</span>
                   </div>
                 </div>
+
+                <div class="timeline-block">
+                  <span class="timeline-step">
+                    <img src="../../imgs/team-4.jpg" class="avatar avatar-sm rounded-circle" alt="staff4">
+                  </span>
+                  <div class="timeline-content">
+                    <h6 class="text-dark text-sm font-weight-bold mb-0">Emma Wilson</h6>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">Documentation</p>
+                    <span class="badge badge-sm bg-gradient-warning">In Progress</span>
+                  </div>
+                </div>
+
+               
               </div>
             </div>
           </div>
         </div>
+
+
       </div>
       <footer class="footer py-4  ">
         <div class="container-fluid">
@@ -793,10 +837,10 @@
   </div>
   <!--   Core JS Files   -->
   <script src="../../js/dashboard/popper.min.js"></script>
-  <script src="../../js/dashboard/chartjs.min.js"></script>
+  <script src="../../js/dashboard/bootstrap.min.js"></script>
   <script src="../../js/dashboard/perfect-scrollbar.min.js"></script>
   <script src="../../js/dashboard/smooth-scrollbar.min.js"></script>
-  <script src="../../js/dashboard/chartjs.js"></script>
+  <script src="../../js/dashboard/chartjs.min.js"></script>
   <script>
     var ctx = document.getElementById("chart-bars").getContext("2d");
 
@@ -871,7 +915,6 @@
       },
     });
 
-
     var ctx2 = document.getElementById("chart-line").getContext("2d");
 
     new Chart(ctx2, {
@@ -890,7 +933,6 @@
           fill: true,
           data: [120, 230, 130, 440, 250, 360, 270, 180, 90, 300, 310, 220],
           maxBarThickness: 6
-
         }],
       },
       options: {
@@ -973,7 +1015,6 @@
           fill: true,
           data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
           maxBarThickness: 6
-
         }],
       },
       options: {
