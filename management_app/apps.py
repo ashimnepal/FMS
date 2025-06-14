@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class FleetManagementConfig(AppConfig):
+class ManagementAppConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'Fleet_Management'
+    name = 'management_app'
