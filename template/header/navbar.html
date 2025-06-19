@@ -1,0 +1,39 @@
+{% load static %}
+{% block content %}
+<section id="nav-head">
+    <div class="headstart">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary navsize">
+        <div class="container">
+          <a class="navbar-brand sizelogo" href="/"> 
+          <img src="{% static 'img/logo.png' %}" alt="All Routes Logo" width="30" height="24">
+          </a>       
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">                
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'about' %}">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=""">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'enterprise' %}">Enterprise</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'pricing' %}">Pricing</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              <div class="sys-access-btn">
+                <a href="pages/authenticator/login.html"><button type="button" class="btn">Login</button></a>
+                <a href="pages/authenticator/signup.html"><button type="button" class="btn btn-danger">SignUp</button></a>
+              </div>
+            </span>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+{% endblock %}

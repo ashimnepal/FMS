@@ -1,0 +1,79 @@
+{% extends 'body/index.html' %}
+{% block content %}
+{% include 'header/navbar.html' %}
+
+<!----------------------START OF THE BODY------------------------------------>
+<section id="about" class="py-5">
+    <div class="container">
+        <!-- Page Header -->
+        <div class="text-center mb-5">
+            <h1 class="display-4">About Us</h1>
+            <p class="lead">Discover who we are, our mission, and what drives us to deliver the best logistics solutions.</p>
+        </div>
+
+        <!-- About Company Section -->
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <h2>Our Mission</h2>
+                <p>We aim to redefine logistics by offering innovative, customer-focused solutions that streamline your supply chain. With years of experience and expertise, we ensure every shipment is handled with precision and care.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="photo-placeholder">Image Placeholder</div>
+            </div>
+        </div>
+
+        <!-- Highlights Section -->
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Commitment to Excellence</h3>
+                        <p class="card-text">We prioritize quality and reliability, ensuring on-time delivery and top-notch service.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Innovative Solutions</h3>
+                        <p class="card-text">From real-time tracking to AI-powered logistics, we constantly evolve to meet modern challenges.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Global Reach</h3>
+                        <p class="card-text">Our network spans across continents, allowing us to connect businesses worldwide seamlessly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vision and Values -->
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Our Vision</h2>
+                <p>To become the global leader in logistics by continually innovating and exceeding customer expectations.</p>
+            </div>
+            <div class="col-md-6">
+                <h2>Core Values</h2>
+                <ul>
+                    <li><strong>Integrity:</strong> We uphold honesty and transparency in every interaction.</li>
+                    <li><strong>Customer-Centric:</strong> Your satisfaction drives us to do better every day.</li>
+                    <li><strong>Innovation:</strong> We embrace change and invest in cutting-edge solutions.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center mt-5">
+            <h2>Join Us on Our Journey</h2>
+            <p>Partner with us and experience logistics like never before. Together, we can achieve more.</p>
+            <button class="btn btn-danger">Learn More</button>
+        </div>
+    </div>
+</section>
+<!----------------------END OF THE BODY------------------------------------>
+{% include 'footer/main_footer.html' %}
+{% endblock %}
